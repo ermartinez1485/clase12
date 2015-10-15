@@ -12,8 +12,8 @@ package clases;
  */
 public class Usuario {
     
-    private static String USER = "eric";
-    private static String PASS = "password";
+    public static String USER = "eric";
+    public static String PASS = "password";
     
     private String nombreUsuario;
     private String contrasena;
