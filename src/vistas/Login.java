@@ -29,18 +29,31 @@ public class Login extends javax.swing.JFrame {
     private void initComponents() {
 
         lblLogin = new javax.swing.JLabel();
+        lblNombre = new javax.swing.JLabel();
+        lblContrasena = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         lblLogin.setText("LOGIN");
+
+        lblNombre.setText("Nombre de Usuario");
+
+        lblContrasena.setText("Contraseña");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(142, 142, 142)
-                .addComponent(lblLogin)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(142, 142, 142)
+                        .addComponent(lblLogin))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(50, 50, 50)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblNombre)
+                            .addComponent(lblContrasena))))
                 .addContainerGap(227, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -48,7 +61,11 @@ public class Login extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(54, 54, 54)
                 .addComponent(lblLogin)
-                .addContainerGap(232, Short.MAX_VALUE))
+                .addGap(60, 60, 60)
+                .addComponent(lblNombre)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lblContrasena)
+                .addContainerGap(133, Short.MAX_VALUE))
         );
 
         pack();
@@ -90,6 +107,8 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel lblContrasena;
     private javax.swing.JLabel lblLogin;
+    private javax.swing.JLabel lblNombre;
     // End of variables declaration//GEN-END:variables
 }
