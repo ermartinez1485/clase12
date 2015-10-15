@@ -36,13 +36,16 @@
                           <Component id="lblContrasena" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="txtUsuario" min="-2" pref="90" max="-2" attributes="0"/>
-                          <Component id="txtContrasena" min="-2" pref="90" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="txtUsuario" max="32767" attributes="0"/>
+                          <Component id="txtContrasena" pref="90" max="32767" attributes="0"/>
+                          <Component id="jButton1" alignment="0" max="32767" attributes="0"/>
                       </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" pref="97" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="139" max="32767" attributes="0"/>
+              <EmptySpace pref="24" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -55,13 +58,16 @@
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblNombre" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtUsuario" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel1" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblContrasena" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtContrasena" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="124" max="32767" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="76" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -85,6 +91,16 @@
     <Component class="javax.swing.JTextField" name="txtUsuario">
     </Component>
     <Component class="javax.swing.JTextField" name="txtContrasena">
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ingresar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
     </Component>
   </SubComponents>
 </Form>
